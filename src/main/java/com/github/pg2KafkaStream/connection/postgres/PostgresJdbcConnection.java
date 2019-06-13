@@ -17,7 +17,6 @@ import java.util.Properties;
 
 
 public class PostgresJdbcConnection extends JdbcConnection implements ConnectionInterface {
-    private static final String currentlyRunningProcessOnSlotSqlState = "55006";
 
     private final Connection streamingConnection;
     private final PGReplicationStream pgReplicationStream;

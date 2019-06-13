@@ -30,10 +30,6 @@ public interface PostgresConfiguration {
                 getPort(), getDatabase());
     }
 
-    default String getSslMode() {
-        return DEFAULT_SSL_MODE;
-    }
-
     default Properties getReplicationProperties() {
         Properties properties = getQueryConnectionProperties();
         PGProperty.PREFER_QUERY_MODE.set(properties, getQueryMode());

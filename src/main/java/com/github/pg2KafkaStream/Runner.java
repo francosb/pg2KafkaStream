@@ -37,42 +37,42 @@ public class Runner implements
 
     @CommandLine.Option(
             names = {"--pgport"},
-            description = "Port that the postgres server is running on",
+            description = "Postrgres database server port",
             defaultValue = "5432"
     )
     private String pgPort;
 
     @CommandLine.Option(
             names = {"--pghost"},
-            description = "Host that the postgres server is running on",
+            description = "Postrgres database server host",
             required = true
     )
     private String pgHost;
 
     @CommandLine.Option(
             names = {"--pguser"},
-            description = "Username for the postgres server",
+            description = "Postrgres database username",
             required = true
     )
     private String pgUser;
 
     @CommandLine.Option(
             names = {"--pgpassword"},
-            description = "Password for the postgres server",
+            description = "Postrgres database password",
             required = true
     )
     private String pgPassword;
 
     @CommandLine.Option(
             names = {"--pgdatabase"},
-            description = "Database of the postgres server",
+            description = "Postrgres database name",
             required = true
     )
     private String pgDatabase;
 
     @CommandLine.Option(
             names = {"--slotname"},
-            description = "Slot name to use when reading Postgres changes.",
+            description = "Postrgres replication slot name",
             required = true
     )
 
